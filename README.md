@@ -28,6 +28,11 @@ Your file should look like this:
 	  
 	snd-bcm2835  
 	i2c-dev
+	
+### Enabling the I2C Peripheral 
+1. Enter `sudo raspi-config`
+2. Go to `Interface Settings`
+3. Enable the I2C Module 
 
 ### Installing Dependency Packages
 1. Run `sudo apt update`
@@ -35,11 +40,6 @@ Your file should look like this:
 3. Then `sudo apt-get install python-smbus`
 4. Add the Pi user to the I2C access group, by running the command `sudo adduser pi i2c`
 5. Reboot using `sudo reboot`
-
-### Enabling the I2C Peripheral 
-1. Enter `sudo raspi-config`
-2. Go to `Interface Settings`
-3. Enable the I2C Module 
 
 ### Testing the Module 
 Run the command `i2cdetect -y 1` to see if the i2c works.
