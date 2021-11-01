@@ -43,3 +43,8 @@ Your file should look like this:
 
 ### Testing the Module 
 Run the command `i2cdetect -y 1` to see if the i2c works.
+
+## Installing the MPU5060 Accelerometer Library
+1. `git clone https://github.com/adafruit/Adafruit_CircuitPython_MPU6050` into any directory you want.
+2. `cd` into the cloned directory
+3. Install the python library using `pip3  install  adafruit-circuitpython-mpu6050`
